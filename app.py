@@ -13,13 +13,9 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 from streamlit_extras.add_vertical_space import add_vertical_space
 from langchain.document_loaders import UnstructuredPowerPointLoader, DirectoryLoader, UnstructuredFileLoader
-import embeddings
+from embeddings import persist_directory,embeddings
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-# select which embeddings we want to use (GPT - ADA)
-embeddings = OpenAIEmbeddings()
-# presist_directory is the Local Directory where embeddings will be saved
-persist_directory = 'db'
 
 with st.sidebar:
     st.title('🤗💬 OPS-GPT')
@@ -43,19 +39,13 @@ def main():
     #     if uploadedfiles is not None:
     #         save_uploadedfile(file)
 
-    # loader = DirectoryLoader('./data')
-    # documents = loader.load()
-    # text_splitter = CharacterTextSplitter(chunk_size=700, chunk_overlap=100)
-    # chunks = text_splitter.split_documents(documents)
-
-
     # Loads the emeddings locally
     db = None
     db = Chroma(persist_directory=persist_directory, embedding_function=embeddings)
 
     # Accept user questions/query
     add_vertical_space(5)
-    query = st.text("Ask questions about your Docs:")
+    query = st.text_input("Ask questions about your Docs:")
 
     prompt_template = """Use the following pieces of context to answer the question. If you don't know the answer, 
         reply saying "I don't know", don't try to make up an answer.

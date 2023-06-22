@@ -17,9 +17,12 @@ from langchain.document_loaders import UnstructuredPowerPointLoader, DirectoryLo
 
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 # select which embeddings we want to use (GPT - ADA)
+
+# select which embeddings we want to use (GPT - ADA)
 embeddings = OpenAIEmbeddings()
 # presist_directory is the Local Directory where embeddings will be saved
 persist_directory = 'db'
+
 
 loader = DirectoryLoader('./data')
 documents = loader.load()
