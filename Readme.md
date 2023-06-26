@@ -4,6 +4,7 @@
 ## Instructions to run locally
 - Clone github repo into pyhcharm or your code editor
 - run pip install -r requirements
+- Add API key '''os.environ["OPENAI_API_KEY"] = "Your API key"'''
 - add your documents to the data directory
 - run embeddings.py to create embeddings
 - in the program directory run "streamlit run app.py"
