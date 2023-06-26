@@ -1,5 +1,5 @@
 ### OPS - GPT/ Master branch
-# This branch does not have the upload feature as data needs to be uploaded before the server is deployed. 
+### This branch does not have the upload feature as data needs to be uploaded before the server is deployed. 
 
 ## Instructions to run locally
 - Clone github repo into pyhcharm or your code editor
