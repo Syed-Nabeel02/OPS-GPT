@@ -15,7 +15,7 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 from langchain.document_loaders import UnstructuredPowerPointLoader, DirectoryLoader, UnstructuredFileLoader
 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "Your API key"
 # select which embeddings we want to use (GPT - ADA)
 embeddings = OpenAIEmbeddings()
 # presist_directory is the Local Directory where embeddings will be saved
