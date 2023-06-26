@@ -11,6 +11,8 @@
 
 # Deployed App link
 - https://ops-gptmaster-qzx4u71238g.streamlit.app/
+- ![image](https://github.com/Syed-Nabeel02/OPS-GPT/assets/102635993/ba4b84a0-bce9-4fea-968a-964f462c201a)
+
 
 
 
