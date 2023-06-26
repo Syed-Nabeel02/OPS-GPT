@@ -33,6 +33,16 @@ with st.sidebar:
     ''')
     add_vertical_space(5)
 
+    filelist = []
+    for root, dirs, files in os.walk("./data"):
+        for file in files:
+            filename = os.path.join(file)
+            filelist.append(filename)
+
+    st.subheader("List of file uploaded")
+    for file in filelist:
+        st.write(file)
+
     load_dotenv()
 
 def main():
