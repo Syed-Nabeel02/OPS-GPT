@@ -1,13 +1,14 @@
 # OPS-GPT
-### This branch is the main branch which is not deployed so upload feature is available. 
-Switch to Master branch to see deployed version https://github.com/Syed-Nabeel02/OPS-GPT/tree/master
+### This branch is the main branch which is not deployed so the upload feature is available. 
+Switch to the Master branch to see deployed version https://github.com/Syed-Nabeel02/OPS-GPT/tree/master
 
 ## Instructions to run locally
 - Clone the GitHub repo into Pycharm or your code editor
-- run pip install -r requirements.txt (to install packages and dependencies)
+- Run pip install -r requirements.txt (to install packages and dependencies)
 - Add your openAI API key
-- add your documents to the data directory
-- in the program directory run "streamlit run app.py"
+- In the program directory run "streamlit run app.py"
+- Add files using the user interface
+- Chat with your documents
 
 
 ### Screenshot of the app running locally
